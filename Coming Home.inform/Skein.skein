@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-105">
+  <generator>Windows Inform 7 6M62</generator>
+  <activeNode nodeId="node-228"/>
+  <item nodeId="node-105">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Coming Home&#x000A;An Interactive Fiction by Geraldo&#x000A;Release 1 / Serial number 190726 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Porch&#x000A;You can see Main door, Main key, Wooden chair, Old box (in which are candle and string) and bucket (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">NO</temporary>
+    <children>
+      <child nodeId="node-228"/>
+    </children>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">In Old box are candle and string.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
