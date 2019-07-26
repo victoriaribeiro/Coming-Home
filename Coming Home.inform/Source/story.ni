@@ -67,6 +67,7 @@ Chapter 3 Things
 Player is in Porch.  
 Main key is in Porch.
 
+
 Section 3.1 On the Porch
 
 Wooden chair is a chair. Wooden chair is in Porch.
@@ -94,7 +95,8 @@ Before taking the Main Key during Being Outside the House:
 Figure of InitialPicture is the file "house.jpg"
 	
 When play begins:
-	Display the Figure of InitialPicture.
+	Display the Figure of InitialPicture ;
+	Say "A chilling wind blows in the late afternoon".
 	
 
 	
