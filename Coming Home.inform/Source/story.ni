@@ -64,8 +64,7 @@ Second Floor is a region. The Upper Hall, The Large Bedroom, the medium bedroom,
 
 Chapter 3 Things
 
-Player is in Porch.  
-Main key is in Porch.
+Player is in  Large Bedroom.
 
 
 Section 3.1 On the Porch
@@ -81,16 +80,19 @@ bucket is in Porch.
 
 Chapter 4 What Happens when entering
 
-Being Outside the House is a Scene. 
-Being Outside the House begins when play begins.
-Being Outside the House ends when player is in  Hall.
+Acordando is a Scene. 
+Acordando begins when play begins.
+Acordando ends when player is in Hall.
 
-When Being Outside the House ends:
+When Acordando begins:
+	Say "Você acordou em um quarto".
+	
+When Acordando ends:
 	Say "The inside smells as bad news...".
 
 
-Before taking the Main Key during Being Outside the House:
-	Say "A chill runs up your spine".
+Before taking the Main Key during Acordando:
+	Say "A chill runs up your spine.....".
 
 Figure of InitialPicture is the file "house.jpg"
 	
