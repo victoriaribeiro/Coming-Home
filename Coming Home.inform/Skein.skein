@@ -1,24 +1,360 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-105">
-  <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-228"/>
-  <item nodeId="node-105">
-    <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Coming Home&#x000A;An Interactive Fiction by Geraldo&#x000A;Release 1 / Serial number 190726 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Porch&#x000A;You can see Main door, Main key, Wooden chair, Old box (in which are candle and string) and bucket (empty) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="45">NO</temporary>
-    <children>
-      <child nodeId="node-228"/>
-    </children>
-  </item>
-  <item nodeId="node-228">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">In Old box are candle and string.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">Coming Home</command>
+        <result xml:space="preserve">
+
+
+The moonlight covers part of your arm, you wake up confused, with a big headache
+Coming Home
+An Interactive Fiction by Cecílio, João, Paulo e Vitória
+Release 1 / Serial number 190811 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Large Bedroom
+A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed. Its really dark, the only light on the room is the faint light from the window. 
+
+You can see Pile of clothes, Picture Portrait, Bedside lamp and Mirror here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+            <child nodeId="node-1003"></child>
+            <child nodeId="node-1015"></child>
+            <child nodeId="node-1008"></child>
+        </children>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Large Bedroom
+A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed. Its really dark, the only light on the room is the faint light from the window. 
+
+You can see Pile of clothes, Picture Portrait and Bedside lamp here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+            <child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">examine Pile of Clothes</command>
+        <result xml:space="preserve">A pile of dirty clothes
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">examine Picture portrait</command>
+        <result xml:space="preserve">You can see you in a party, with a blonde woman at your side
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">examine bedside lamp</command>
+        <result xml:space="preserve">A lamp used to give some minor light on the room
+
+You turn it on. Now you can see the room more clearly, and there are a body in the ground
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1013"></child>
+        </children>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">examine deadbody</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1014"></child>
+        </children>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">examine dead body</command>
+        <result xml:space="preserve"> A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. She was really important to you. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">examine pile of clothes</command>
+        <result xml:space="preserve">A pile of dirty clothes. It stinks of sweat and alcohol.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">examine picture portrait</command>
+        <result xml:space="preserve">You can see you in a party with some people, with a blonde woman at your side. You look really happy and satisfied to be there.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+        </children>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">search pile of clothes</command>
+        <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">search bedside lamp</command>
+        <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">exaine bedside lamp</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">examine bedside lamp</command>
+        <result xml:space="preserve">A lamp used to give some minor light on the room
+
+You turn it on. After some seconds getting used to the light you can see the room more clearly, and there is a body in the ground. There's blood around the body.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Large Bedroom
+A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed.  You can see a big room, and a body is laid down on the ground.
+
+You can see Dead body, Pile of clothes, Picture Portrait, Bedside lamp and Mirror here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">examine dead body</command>
+        <result xml:space="preserve"> A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. 
+
+Looking more closely you see a woman bag near the bed
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Large Bedroom
+A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed.  You can see a big room, and a body is laid down on the ground.
+
+You can see Woman bag (in which are Car key, Driver License and Phone), Dead body, Pile of clothes, Picture Portrait, Bedside lamp and Mirror here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">pick woman bag</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">pick car key</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">examine woman bag</command>
+        <result xml:space="preserve">You find some items of common use by woman, a key and a driver license
+
+In Woman bag are Car key, Driver License and Phone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+            <child nodeId="node-1074"></child>
+        </children>
+    </item>
+    <item nodeId="node-1074">
+        <command xml:space="preserve">take Car key</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1075"></child>
+        </children>
+    </item>
+    <item nodeId="node-1075">
+        <command xml:space="preserve">take Phone</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1076"></child>
+        </children>
+    </item>
+    <item nodeId="node-1076">
+        <command xml:space="preserve">take Driver License</command>
+        <result xml:space="preserve">Taken.
+
+História do primeiro Flashback
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">pick Car key</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">take car key</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1091"></child>
+            <child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">take driver licens</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take Driver License.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">take driver license</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+            <child nodeId="node-1048"></child>
+        </children>
+    </item>
+    <item nodeId="node-1048">
+        <command xml:space="preserve">take phone</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1049"></child>
+        </children>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  Phone
+  Driver License
+  Car key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  Driver License
+  Car key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1091">
+        <command xml:space="preserve">take Phone</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1092"></child>
+        </children>
+    </item>
+    <item nodeId="node-1092">
+        <command xml:space="preserve">take Driver License</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1093"></child>
+        </children>
+    </item>
+    <item nodeId="node-1093">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  Driver License
+  Phone
+  Car key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1094"></child>
+        </children>
+    </item>
+    <item nodeId="node-1094">
+        <command xml:space="preserve">examine Driver License</command>
+        <result xml:space="preserve">A Driver License from the victim. Her name is Katherine.
+
+História aqui do primeiro Flashback
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1003">
+        <command xml:space="preserve">examine box</command>
+        <result xml:space="preserve">In Old box are candle and string.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">examine bedside lamp</command>
+        <result xml:space="preserve">A lamp used to give some minor light on the room
+
+You turn it on. Now you can see the room more clearly, and there are a body in the ground
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Large Bedroom
+A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed.  You can see a big room, and a body is laid down on the ground.
+
+You can see Dead body, Pile of clothes, Picture Portrait and Bedside lamp here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
 </Skein>

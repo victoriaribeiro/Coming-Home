@@ -1,6 +1,6 @@
-"Coming Home" by Geraldo
+"Coming Home" by Cecílio, João, Paulo e Vitória
 
-Chapter 1 New Kinds
+Chapter 1 Awakening
 
 Section 1.1 The Staircase
 
@@ -8,32 +8,48 @@ A staircase is a kind of door. A staircase is usually open. A staircase is seldo
 Instead of climbing a staircase: 
     try entering the noun. 
 
-Section 2.1 Chairs
+Section 1.2 Large Bedroom
 
-A chair is a kind of supporter that is enterable with carrying capacity 1. 
+[Variables]
+BedroomLightOn is a truth state that varies. BedroomLightOn is false.
 
-[Instead of entering a chair:
-    try sitting the noun.]
+Large Bedroom is a room. "A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed. 
+[if BedroomLightOn is false]Its really dark, the only light on the room is the faint light from the window. [otherwise] You can see a big room, and a body is laid down on the ground."
 
-Definition: A chair is occupied if something is on it.
+Pile of clothes is in Large Bedroom. The description of Pile of Clothes is "A pile of dirty clothes. It stinks of sweat and alcohol.".
 
-Understand the command "sit" as something new.
-Sitting on is an action applying to one thing.
-Understand "sit on [something]" as sitting on.
-understand "sit on top of [something]" as sitting on.
+Picture Portrait is in Large Bedroom. The description of Picture Portrait is "You can see you in a party with some people, with a blonde woman at your side. You look really happy and satisfied to be there."
 
-Check an actor sitting on a thing:
-	If the noun is occupied, say "You can't sit in the [the noun], it is occupied" instead;
-	If the noun is not enterable, say "You can't sit on [the noun]" instead.
+Bedside lamp is in Large Bedroom. The description is "A lamp used to give some minor light on the room"
 
-Check an actor entering a thing:
-	If the thing is occupied, say "You can't sit in a occupied chair" instead;
+Car key is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
+Driver License is a object. The description is "A Driver License from the victim. Her name is Katherine.".
+Woman Phone is a object. The description is "A smartphone from the woman. It's locked."
 
-Carry out sitting on a chair:
-	silently try entering the noun.
+Mirror is a object. Mirror is in Large Bedroom. The description is "[if BedroomLightOn is true] You look like shit. Your dark circles are huge and visibly tired. On your shirt, and hands you see dried blood marks. [otherwise] You cannot see yourself in this darkness."
 
-Report sitting on a chair:
-	say "You feel confortable".
+
+Woman bag is a container. The description is "You find some items of common use by woman, a key, a phone and a driver license". 
+
+Car key, Driver License, Woman Phone are in the woman bag.
+
+Dead body is an object. The description is "[if we have examined the Picture Portrait] A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. [otherwise]A dead body of a blonde woman".
+
+After examining the Dead Body:
+	if we have examined the picture portrait:
+		now Woman Bag is in Large Bedroom;
+		say "Looking more closely you see a woman bag near the bed";
+		continue the action;
+	
+After examining the Bedside Lamp:
+	if BedroomLightOn is false:
+		say "You turn it on. After some seconds getting used to the light you can see the room more clearly, and there is a body in the ground. There's blood around the body.";
+		now Dead body is in Large Bedroom;
+		now BedroomLightOn is true;
+		continue the action;
+	otherwise:
+		say "Just a Bedside lamp already turned on. Perhaps you should look around you.";
+		continue the action;
 
 Chapter 2 Geography
 
@@ -64,7 +80,32 @@ Second Floor is a region. The Upper Hall, The Large Bedroom, the medium bedroom,
 
 Chapter 3 Things
 
-Player is in  Large Bedroom.
+Section 3.1 Chairs
+
+A chair is a kind of supporter that is enterable with carrying capacity 1. 
+
+[Instead of entering a chair:
+    try sitting the noun.]
+
+Definition: A chair is occupied if something is on it.
+
+Understand the command "sit" as something new.
+Sitting on is an action applying to one thing.
+Understand "sit on [something]" as sitting on.
+understand "sit on top of [something]" as sitting on.
+
+Check an actor sitting on a thing:
+	If the noun is occupied, say "You can't sit in the [the noun], it is occupied" instead;
+	If the noun is not enterable, say "You can't sit on [the noun]" instead.
+
+Check an actor entering a thing:
+	If the thing is occupied, say "You can't sit in a occupied chair" instead;
+
+Carry out sitting on a chair:
+	silently try entering the noun.
+
+Report sitting on a chair:
+	say "You feel confortable".
 
 
 Section 3.1 On the Porch
@@ -78,29 +119,27 @@ candle, string are in Old box.
 
 bucket is in Porch.
 
-Chapter 4 What Happens when entering
 
-Acordando is a Scene. 
-Acordando begins when play begins.
-Acordando ends when player is in Hall.
+Chapter 4 Jogando
 
-When Acordando begins:
-	Say "Você acordou em um quarto".
-	
-When Acordando ends:
-	Say "The inside smells as bad news...".
+Section 4.1 - The awakening
 
+Awakening is a Scene. 
+Awakening begins when play begins.
 
-Before taking the Main Key during Acordando:
-	Say "A chill runs up your spine.....".
+The player is in Large Bedroom
 
-Figure of InitialPicture is the file "house.jpg"
-	
 When play begins:
-	Display the Figure of InitialPicture ;
-	Say "A chilling wind blows in the late afternoon".
+	Say "The moonlight covers part of your arm, you wake up confused, with a big headache. You can't renember your own name and certainly had better days. ";
 	
+Awakening ends when we have examined the Driver License.
 
+When Awakening ends:
+	Say "After looking at the name Katherine, you begin to remember last night. You remember what happened last night.
+
+Katherine and you were in the car arguing fiercely. The driving was dangerous as it was raining heavily. You felt a tremendous fury and tried to pull the phone from your hand. The discussion seemed to have been about the content of some message on her phone, but you don't remember for sure.
+
+You look at Katherine's cold body beside you, and the bloodstains, but you can't remember how that happened. Had his fury gone out of control? Was it an accident?";
 	
 	
 	

@@ -1,21 +1,20 @@
 ! Blurb file created by Inform build 6M62
 
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.inform\Build\StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/pauloxavier/git/jogo-ficcao/Coming Home.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.inform"
-release to "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.materials\Release"
+project folder "/Users/pauloxavier/git/jogo-ficcao/Coming Home.inform"
+release to "/Users/pauloxavier/git/jogo-ficcao/Coming Home.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Coming Home.gblorb"
-storyfile "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.inform\Build\output.ulx" include
-ifiction "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.inform\Metadata.iFiction" include
-cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 3 "C:\Users\Victoria\Documents\Mestrado\Projeto de Jogos\Coming-Home\Coming Home.materials\Figures\house.jpg"
+storyfile "/Users/pauloxavier/git/jogo-ficcao/Coming Home.inform/Build/output.ulx" include
+ifiction "/Users/pauloxavier/git/jogo-ficcao/Coming Home.inform/Metadata.iFiction" include
+cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
 ! Placeholder variables
 
@@ -23,7 +22,7 @@ placeholder [IFID] = "AFED7449-E600-46F2-A8B7-F5C142F40AA1"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2019"
 placeholder [TITLE] = "Coming Home"
-placeholder [AUTHOR] = "Geraldo"
+placeholder [AUTHOR] = "Cecílio, João, Paulo e Vitória"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
