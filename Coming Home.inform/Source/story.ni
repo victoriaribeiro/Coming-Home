@@ -131,7 +131,7 @@ GarageLightOn is a truth state that varies. GarageLightOn is false.
 Garage is a room."It's too dark to see anything".
 Garage Light Switch is in Garage.
 
-Black Porsche is a vehicle. The description is "It seems to be you car Maybe you could enter and check inside." 
+Black Porsche is a vehicle. The description is "It seems to be you car. Maybe you could enter and check inside." 
 Credential is a object. The description is "It is a credential from River Tech. It says that you are John River II, COO of the company.". Credential is in Black Porsche. 
 
 After examining the Garage Light Switch:
@@ -146,13 +146,23 @@ After examining the Garage Light Switch:
 After entering the Black Porsche:	
 	say "You entered the car.";
 	continue the action;
+	
 
-After leaving the Black Porsche:
-	say "When you open the door, you notice a wet tire trail in your garage. You assume someone else was in the house not so long ago.";
-	continue the action;
 
 
 Chapter 2 Geography
+
+Section 2.2 - Leaving a named object
+
+Understand “exit [thing]” as getting off. Understand “get out of [thing]” as getting off.
+
+This is the new can’t get off things rule:	
+	if the actor is on the noun, continue the action;
+	if the actor is carried by the noun, continue the action;
+	if the actor is in the noun, continue the action;
+	
+
+The new can’t get off things rule is listed instead of the can’t get off things rule in the check getting off rules.
 
 Section 2.1 The House
 
@@ -167,6 +177,7 @@ MB Door is a Door. It is west of Medium Bedroom and east of Upper Hall. MB Door 
 Small Bedroom Door is a Door. It is east of Small Bedroom and west of Upper Hall. Small Bedroom Door is closed and locked.
 BT Door is a Door. It is north of Bathroom and south of Upper Hall. BT is open and locked.
 Living Room Door is a Door. It is north of Hall and south of Living Room. Living Room Door is open and unlocked.
+
 [Kitchen Door is a Door. It is south of Large Bedroom and north of Upper Hall. Kitchen Door is open and unlocked.]
 
 
