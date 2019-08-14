@@ -99,7 +99,7 @@ KitchenLightOn is a truth state that varies. KitchenLightOn is false.
 
 Kitchen is a room."it's too Dark to examine".
 
-Car key is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
+CarKey is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
 
 KitchenBalcony is a container.  
 
@@ -111,7 +111,7 @@ After examining the Light Switch k:
 	if KitchenLightOn is false:
 		say "You turn it on. Now you can see footprints on the floor it looks like someone left in a hurry, you start to suspect that someone might be trying to incriminate you.";
 		now KitchenBalcony is in Kitchen;
-		now Car key is in the KitchenBalcony;
+		now CarKey is in the KitchenBalcony;
 		now Stove is in Kitchen;
 		now KitchenLightOn is true;
 		continue the action;
@@ -121,6 +121,36 @@ After examining the Light Switch k:
 		
 After examining Stove:
 	say "You can see your car through the kitchen window parked in the south garage."
+
+
+Section 1.6 Garage
+
+[Variables]
+GarageLightOn is a truth state that varies. GarageLightOn is false.
+
+Garage is a room."It's too dark to see anything".
+Garage Light Switch is in Garage.
+
+Black Porsche is a vehicle. The description is "It seems to be you car Maybe you could enter and check inside." 
+Credential is a object. The description is "It is a credential from River Tech. It says that you are John River II, COO of the company.". Credential is in Black Porsche. 
+
+After examining the Garage Light Switch:
+	if GarageLightOn is false:
+		say "The lights are on. You see a black Porsche. You really like the car, so it must be yours...";
+		now Black Porsche is in Garage;
+ 		continue the action;
+	otherwise:
+		say "The Lights are still on";
+		continue the action;
+
+After entering the Black Porsche:	
+	say "You entered the car.";
+	continue the action;
+
+After leaving the Black Porsche:
+	say "When you open the door, you notice a wet tire trail in your garage. You assume someone else was in the house not so long ago.";
+	continue the action;
+
 
 Chapter 2 Geography
 
@@ -132,11 +162,12 @@ Hall is room.
 Main door is a door. It is north of Porch and south of Hall. Main door is closed and locked.
 The matching key of the Main door is Main key.
 
-LB Door is a Door. It is south of Large Bedroom and north of Upper Hall. LB Door is open and unlocked.
-MB Door is a Door. It is west of Medium Bedroom and east of Upper Hall. MB Door is open and unlocked.
-SB Door is a Door. It is east of Small Bedroom and west of Upper Hall. SB Door is closed and locked.
-BT Door is a Door. It is north of Bathroom and south of Upper Hall. BT Door is open and unlocked.
-LR Door is a Door. It is north of Hall and south of Living Room. LR Door is open and unlocked.
+Large Bedroom Door is a Door. It is south of Large Bedroom and north of Upper Hall. Large Bedroom Door is open and unlocked.
+MB Door is a Door. It is west of Medium Bedroom and east of Upper Hall. MB Door is open and locked.
+Small Bedroom Door is a Door. It is east of Small Bedroom and west of Upper Hall. Small Bedroom Door is closed and locked.
+BT Door is a Door. It is north of Bathroom and south of Upper Hall. BT is open and locked.
+Living Room Door is a Door. It is north of Hall and south of Living Room. Living Room Door is open and unlocked.
+[Kitchen Door is a Door. It is south of Large Bedroom and north of Upper Hall. Kitchen Door is open and unlocked.]
 
 
 Living Room is a room.
@@ -187,16 +218,6 @@ Report sitting on a chair:
 
 
 Section 3.1 On the Porch
-
-Wooden chair is a chair. Wooden chair is in Porch.
-
-Old box is a container. Old box is in Porch.
-
-candle is a thing. string is a thing. bucket is a container.
-candle, string are in Old box.
-
-bucket is in Porch.
-
 
 Chapter 4 Jogando
 
