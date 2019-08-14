@@ -13,25 +13,34 @@ Section 1.2 Large Bedroom
 [Variables]
 BedroomLightOn is a truth state that varies. BedroomLightOn is false.
 
-Large Bedroom is a room. "A large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed. 
-[if BedroomLightOn is false]Its really dark, the only light on the room is the faint light from the window. [otherwise] You can see a big room, and a body is laid down on the ground."
+Large Bedroom is a room. "it's too Dark to examine".
+
+Bedside lamp is in Large Bedroom. The description is "A lamp used to give some minor light on the room"
+
+After examining the Bedside lamp:
+	if BedroomLightOn is false:
+		say "You turn it on. now you can see a large bedroom with a queen size bed at its center, with one bedside lamp at the right of the bed and a body is laid down on the ground.";
+		now Pile of clothes is in Large Bedroom;
+		now Picture Portrait is in Large Bedroom;
+		now Dead body is in Large Bedroom;
+		now BedroomLightOn is true;
+		continue the action;
+	otherwise:
+		say "Just a Bedside lamp already turned on. Perhaps you should look around you.";
+		continue the action;
 
 Pile of clothes is in Large Bedroom. The description of Pile of Clothes is "A pile of dirty clothes. It stinks of sweat and alcohol.".
 
 Picture Portrait is in Large Bedroom. The description of Picture Portrait is "You can see you in a party with some people, with a blonde woman at your side. You look really happy and satisfied to be there."
 
-Bedside lamp is in Large Bedroom. The description is "A lamp used to give some minor light on the room"
-
-Car key is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
 Driver License is a object. The description is "A Driver License from the victim. Her name is Katherine.".
 Woman Phone is a object. The description is "A smartphone from the woman. It's locked."
 
 Mirror is a object. Mirror is in Large Bedroom. The description is "[if BedroomLightOn is true] You look like shit. Your dark circles are huge and visibly tired. On your shirt, and hands you see dried blood marks. [otherwise] You cannot see yourself in this darkness."
 
+Woman bag is a container. The description is "You find some items of common use by woman, a phone and a driver license". 
 
-Woman bag is a container. The description is "You find some items of common use by woman, a key, a phone and a driver license". 
-
-Car key, Driver License, Woman Phone are in the woman bag.
+Driver License, Woman Phone are in the woman bag.
 
 Dead body is an object. The description is "[if we have examined the Picture Portrait] A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. [otherwise]A dead body of a blonde woman".
 
@@ -41,18 +50,6 @@ After examining the Dead Body:
 		say "Looking more closely you see a woman bag near the bed";
 		continue the action;
 	
-After examining the Bedside Lamp:
-	if BedroomLightOn is false:
-		say "You turn it on. After some seconds getting used to the light you can see the room more clearly, and there is a body in the ground. There's blood around the body.";
-		now Dead body is in Large Bedroom;
-		now BedroomLightOn is true;
-		continue the action;
-	otherwise:
-		say "Just a Bedside lamp already turned on. Perhaps you should look around you.";
-		continue the action;
-
-
-
 Section 1.3 Living Room
 
 [Variables]
@@ -73,6 +70,57 @@ After examining the Light Switch:
 	otherwise:
 		say "The Lights are still on";
 		continue the action;
+		
+Section 1.4 Dining Room
+
+[Variables]
+DiningRoomLightOn is a truth state that varies. DiningRoomLightOn is false.
+
+Dining Room is a room."it's too Dark to examine".
+
+Dining Table is in Dinig Room. The description of Dining Table is "[if we have examined the Light Switch dn] The table is clean".
+
+Light Switch dn is in Dining Room. The description is "the lights come on".
+
+After examining the Light Switch dn:
+	if DiningRoomLightOn is false:
+		say "You turn it on. - Oh my God! A black shadow quickly jumps toward you! It's just a black cat! now you can see around, the room shows no signs of movement but to the west you can see Kitchen door. ";
+		now Dining Table is in Dining Room;
+		now DiningRoomLightOn is true;
+		continue the action;
+	otherwise:
+		say "The Lights are still on";
+		continue the action;
+		
+Section 1.5 Kitchen
+
+[Variables]
+KitchenLightOn is a truth state that varies. KitchenLightOn is false.
+
+Kitchen is a room."it's too Dark to examine".
+
+Car key is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
+
+KitchenBalcony is a container.  
+
+Stove is a object. The description is "[if we have examined the Light Switch k] Nothing interesting about this object"
+
+Light Switch k is in Kitchen. The description is "the lights come on".
+
+After examining the Light Switch k:
+	if KitchenLightOn is false:
+		say "You turn it on. Now you can see footprints on the floor it looks like someone left in a hurry, you start to suspect that someone might be trying to incriminate you.";
+		now KitchenBalcony is in Kitchen;
+		now Car key is in the KitchenBalcony;
+		now Stove is in Kitchen;
+		now KitchenLightOn is true;
+		continue the action;
+	otherwise:
+		say "The Lights are still on";
+		continue the action;
+		
+After examining Stove:
+	say "You can see your car through the kitchen window parked in the south garage."
 
 Chapter 2 Geography
 
