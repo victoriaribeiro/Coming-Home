@@ -51,6 +51,29 @@ After examining the Bedside Lamp:
 		say "Just a Bedside lamp already turned on. Perhaps you should look around you.";
 		continue the action;
 
+
+
+Section 1.3 Living Room
+
+[Variables]
+LivingRoomLightOn is a truth state that varies. LivingRoomLightOn is false.
+
+Living Room is a room."it's too Dark to examine".
+
+Golden Picture Portrait  is  in Small Bedroom. The description of Golden Picture Portrait is "[if we have examined the Light Switch] You can see you, Katherine and a third man with familiar features ... He ... is your Brother ... you remembered a violent fight  on the Last Week with him".
+
+Light Switch is in Living Room.
+
+After examining the Light Switch:
+	if LivingRoomLightOn is false:
+		say "You turn it on. now you can see a room vintage ornated with  several shelds with Picture Portraits but one of then caught your eye. ";
+		now Golden Picture Portrait is in Living Room;
+		now LivingRoomLightOn is true;
+		continue the action;
+	otherwise:
+		say "The Lights are still on";
+		continue the action;
+
 Chapter 2 Geography
 
 Section 2.1 The House
@@ -61,7 +84,14 @@ Hall is room.
 Main door is a door. It is north of Porch and south of Hall. Main door is closed and locked.
 The matching key of the Main door is Main key.
 
-Living Room is a room. Living room is north of Hall.
+LB Door is a Door. It is south of Large Bedroom and north of Upper Hall. LB Door is open and unlocked.
+MB Door is a Door. It is west of Medium Bedroom and east of Upper Hall. MB Door is open and unlocked.
+SB Door is a Door. It is east of Small Bedroom and west of Upper Hall. SB Door is closed and locked.
+BT Door is a Door. It is north of Bathroom and south of Upper Hall. BT Door is open and unlocked.
+LR Door is a Door. It is north of Hall and south of Living Room. LR Door is open and unlocked.
+
+
+Living Room is a room.
 Garage is a room. Garage is west of Living Room.
 Kitchen is a room.  Kitchen is north of garage.
 Dining Room is a room. Dining room is east of kitchen. Dining Room is north of Living Room.
@@ -69,10 +99,10 @@ Home Office is a room. Home Office is east of Living Room.
 Lavabo is a room. Lavabo is east of Hall. "The lavabo needs to be cleaned."
 Stairs is a staircase. It is above Hall and below Upper Hall.
 Upper Hall is a room.  
-Large Bedroom is a room. Large Bedroom is north of Upper Hall.
-Medium Bedroom is a room.  Medium Bedroom is east of Upper Hall.
-Small Bedroom is a room. Small Bedroom is west of Upper Hall.
-Bathroom is a room. Bathroom is south of Upper Hall.
+Large Bedroom is a room. 
+Medium Bedroom is a room.
+Small Bedroom is a room.
+Bathroom is a room.
 Inner Bathroom is a room. Inner Bathroom is west of Large Bedroom.
 
 First Floor is a region. The Hall, Living Room, Garage, Kitchen, Dining Room, Home Office and Lavabo are in First Floor.
