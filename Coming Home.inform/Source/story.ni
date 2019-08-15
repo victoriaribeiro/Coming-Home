@@ -143,14 +143,12 @@ Garage is a room."It's too dark to see anything".
 Garage Light Switch is in Garage.
 
 Black Porsche is a vehicle. The description is "It seems to be you car. Maybe you could enter and check inside." 
-Black Porsche is locked.
+
 
 The matching key of the Black Porsche is the Car Key. 
 Car Key is in the kitchen.
 
 Credential is a object. The description is "It is a credential from River Tech. It says that you are John River II, COO of the company.". Credential is in Black Porsche. 
-
-Smartphone is a object. The description is "An iPhone with a pink case. The wallpaper " Woman Phone i
 
 After examining the Garage Light Switch:
 	if GarageLightOn is false:
@@ -161,16 +159,30 @@ After examining the Garage Light Switch:
 		say "The Lights are still on";
 		continue the action;
 
+The Brother is a man.  
 
-Before entering the Black Porsche:
-	if HasCarKey is false:	
-		now Black Porsche is locked;
-		continue the action;
-	otherwise:
-		now Black Porsche is unlocked;
-		now Black Porsche is open;
-		say "You entered the car";
-		continue the action;
+Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it. 
+
+Smartphone is a object. The description is "An iPhone with a pink case. The wallpaper is Katherine having fun on the beach, happy and alive. The more you look at her picture, the more you remember how much you liked her. Then, you remember she is dead on your bedroom floor and you start to shake." Smartphone is in Black Porsche. 
+
+After examining the Smartphone:
+	now the Brother is in Garage;
+	say "Wait a minute... You are not shaking. The phone is vibrating. Someone is calling. You answer the phone by instinct but hesitate to say anything. On the other side, you hear someone:
+
+	-  'Katherine? Is that you? '
+	
+	You recognize this voice! It is your brother! What should you do?
+
+	- 'Brother?', you ask
+
+	-'John! What are you doing?'";
+	continue the action;
+
+After asking the Brother about "Katherine", say "What did you do to her???? It was all your fault!"
+
+After asking the Brother about  "Company/River Tech", say "You just killed a woman and you wanna talk about the company?? I always knew you were obsseded with owning that place. Do you think dad will give you the CEO position now that you are a murderer?? "
+
+After asking Brother about "it wasn't me/i am innocent", say "Of course it was you. You were mad at her for flirting with some other guy last night. You went home way too drunk and then this happened. "
 		
 	
 	
