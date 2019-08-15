@@ -45,6 +45,9 @@ Driver License is in the woman bag.
 
 Dead body is an object. The description is "[if we have examined the Picture Portrait] A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. [otherwise]A dead body of a blonde woman".
 
+After examining Woman bag:
+	Display the Figure of bolsa ;
+
 After examining the Dead Body:
 	if we have examined the picture portrait:
 		now Woman Bag is in Large Bedroom;
@@ -187,10 +190,6 @@ After asking Brother about "it wasn't me/i am innocent", say "Of course it was y
 	
 	
 
-
-[If HasCarKey is false:]
-	
-
 Chapter 2 Geography
 
 Section 2.2 - Leaving a named object
@@ -280,8 +279,16 @@ Awakening begins when play begins.
 
 The player is in Large Bedroom
 
+Figure of InitialPicture is the file "presunto.jpg".
+Figure of bolsa is the file "bolsa_feminina.jpg".
+Figure of carro is the file "carro.jpg".
+Figure of cozinha is the file "cozinha.jpg".
+Figure of garagem is the file "garagem.jpg".
+
+
 When play begins:
-	Say "The moonlight covers part of your arm, you wake up confused, with a big headache. You can't remember your own name and certainly had better days. ";
+	Display the Figure of InitialPicture ;
+	Say "The moonlight covers part of your arm, you wake up confused, with a big headache. You can't renember your own name and certainly had better days. ";
 	
 Awakening ends when we have examined the Driver License.
 
@@ -291,6 +298,4 @@ When Awakening ends:
 Katherine and you were in the car arguing fiercely. The driving was dangerous as it was raining heavily. You felt a tremendous fury and tried to pull the phone from your hand. The discussion seemed to have been about the content of some message on her phone, but you don't remember for sure.
 
 You look at Katherine's cold body beside you, and the bloodstains, but you can't remember how that happened. Had his fury gone out of control? Was it an accident?";
-	
-	
 	
