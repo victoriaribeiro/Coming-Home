@@ -12,6 +12,7 @@ Section 1.2 Large Bedroom
 
 [Variables]
 BedroomLightOn is a truth state that varies. BedroomLightOn is false.
+HasCarKey is a truth state that varies. HasCarKey is false.
 
 Large Bedroom is a room. "it's too Dark to examine".
 
@@ -40,7 +41,7 @@ Mirror is a object. Mirror is in Large Bedroom. The description is "[if BedroomL
 
 Woman bag is a container. The description is "You find some items of common use by woman, a phone and a driver license". 
 
-Driver License, Woman Phone are in the woman bag.
+Driver License is in the woman bag.
 
 Dead body is an object. The description is "[if we have examined the Picture Portrait] A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. [otherwise]A dead body of a blonde woman".
 
@@ -101,6 +102,10 @@ Kitchen is a room."it's too Dark to examine".
 
 CarKey is a object. The description is "It looks like a key from a car. Perhaps i could use it later?".
 
+After taking the CarKey:
+	now HasCarKey is true;
+	continue the action;
+
 KitchenBalcony is a container.  
 
 Stove is a object. The description is "[if we have examined the Light Switch k] Nothing interesting about this object"
@@ -119,8 +124,8 @@ After examining the Light Switch k:
 		say "The Lights are still on";
 		continue the action;
 		
-After examining Stove:
-	say "You can see your car through the kitchen window parked in the south garage."
+After taking CarKey:
+	say "You can see your car through the kitchen window parked in the south garage. You remember your brother and the times he wanted to take his place in the family business. But would he be able to incriminate you? ".
 
 
 Section 1.6 Garage
@@ -132,7 +137,14 @@ Garage is a room."It's too dark to see anything".
 Garage Light Switch is in Garage.
 
 Black Porsche is a vehicle. The description is "It seems to be you car. Maybe you could enter and check inside." 
+Black Porsche is locked.
+
+The matching key of the Black Porsche is the Car Key. 
+Car Key is in the kitchen.
+
 Credential is a object. The description is "It is a credential from River Tech. It says that you are John River II, COO of the company.". Credential is in Black Porsche. 
+
+Smartphone is a object. The description is "An iPhone with a pink case. The wallpaper " Woman Phone i
 
 After examining the Garage Light Switch:
 	if GarageLightOn is false:
@@ -143,12 +155,23 @@ After examining the Garage Light Switch:
 		say "The Lights are still on";
 		continue the action;
 
-After entering the Black Porsche:	
-	say "You entered the car.";
-	continue the action;
+
+Before entering the Black Porsche:
+	if HasCarKey is false:	
+		now Black Porsche is locked;
+		continue the action;
+	otherwise:
+		now Black Porsche is unlocked;
+		now Black Porsche is open;
+		say "You entered the car";
+		continue the action;
+		
+	
 	
 
 
+[If HasCarKey is false:]
+	
 
 Chapter 2 Geography
 
@@ -240,7 +263,7 @@ Awakening begins when play begins.
 The player is in Large Bedroom
 
 When play begins:
-	Say "The moonlight covers part of your arm, you wake up confused, with a big headache. You can't renember your own name and certainly had better days. ";
+	Say "The moonlight covers part of your arm, you wake up confused, with a big headache. You can't remember your own name and certainly had better days. ";
 	
 Awakening ends when we have examined the Driver License.
 
