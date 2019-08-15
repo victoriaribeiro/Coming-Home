@@ -150,14 +150,15 @@ Instead of telling someone about something, try asking the noun about it. Instea
 
 Smartphone is a object. The description is "An iPhone with a pink case. The wallpaper is Katherine having fun on the beach, happy and alive. The more you look at her picture, the more you remember how much you liked her. Then, you remember she is dead on your bedroom floor and you start to shake." Smartphone is in Black Porsche. 
 
+After entering the Black Porsche:	
+	say "You entered the car.";
+	continue the action;
+	
 After examining the Smartphone:
 	now the Brother is in Garage;
 	say "Wait a minute... You are not shaking. The phone is vibrating. Someone is calling. You answer the phone by instinct but hesitate to say anything. On the other side, you hear someone:
 
 	-  'Katherine? Is that you? '
-After entering the Black Porsche:	
-	say "You entered the car.";
-	continue the action;
 	
 	You recognize this voice! It is your brother! What should you do?
 
@@ -166,13 +167,34 @@ After entering the Black Porsche:
 	-'John! What are you doing?'";
 	continue the action;
 
-After asking the Brother about "Katherine", say "What did you do to her???? It was all your fault!"
+After asking the Brother about "Katherine", say "'What did you do to her???? It was all your fault!'"
 
-After asking the Brother about  "Company/River Tech", say "You just killed a woman and you wanna talk about the company?? I always knew you were obsseded with owning that place. Do you think dad will give you the CEO position now that you are a murderer?? "
+After asking the Brother about  "Company/River Tech", say "'You just killed a woman and you wanna talk about the company?? I always knew you were obsseded with owning that place. Do you think dad will give you the CEO position now that you are a murderer?? '"
 
-After asking Brother about "it wasn't me/i am innocent", say "Of course it was you. You were mad at her for flirting with some other guy last night. You went home way too drunk and then this happened. "
+After asking Brother about "it was not me", say "'Of course it was you. You were mad at her for flirting with some other guy last night. You went home way too drunk and then this happened.' "
 		
-	
+After asking Brother about "i am innocent", say "'Of course it was you. You were mad at her for flirting with some other guy last night. You went home way too drunk and then this happened.' "
+			
+After asking Brother about "You did this / i know it was you", say "'Are you insane? Why would I even do this?? I am not a murderer, you are!'"
+
+After asking Brother about "You set me up", say "'Okay, I may have done this....'"
+
+After asking Brother about "You want the company", say "'Sure I do. But dad will never give it me because you are his favorite son.'"
+
+After asking Brother about "You want to be the ceo", say "'Sure I do. But dad will never give it me because you are his favorite son.'"
+
+After asking Brother about "I have evidence":
+	say "'What evidence??? I left no trails! It was a perfect crime'";
+	say "You feel he is nervous. He confesses he did this to incriminate you and take your position as the CEO of the company. ";
+	end the story;
+
+After asking Brother about "police ", say "'Well, they are probably after you as we speak.'"
+
+
+After asking Brother about "i am turning myself in":
+	say "'You give up. You realize you killed katherine and turn yourself in'";
+	end the story;
+
 	
 
 Chapter 2 Geography
