@@ -44,8 +44,15 @@ Driver License, Woman Phone are in the woman bag.
 
 Dead body is an object. The description is "[if we have examined the Picture Portrait] A dead body of a blonde woman. It's the same woman in the portrait. You feel a strange and intense sadness. You look around and see more pictures of her. She was really important to you. There's something behind her. [otherwise]A dead body of a blonde woman".
 
-After examining Woman bag:
+Before examining Woman bag:
 	Display the Figure of bolsa ;
+	
+Before examining Driver License:
+	Display the Figure of driver;
+	
+
+Before examining Credential:
+	Display the Figure of empresa ;
 
 After examining the Dead Body:
 	if we have examined the picture portrait:
@@ -247,11 +254,9 @@ Awakening begins when play begins.
 The player is in Large Bedroom
 
 Figure of InitialPicture is the file "presunto.jpg".
+Figure of driver is the file "presunto_vivo.jpg".
 Figure of bolsa is the file "bolsa_feminina.jpg".
-Figure of carro is the file "carro.jpg".
-Figure of cozinha is the file "cozinha.jpg".
-Figure of garagem is the file "garagem.jpg".
-
+Figure of empresa is the file "homi_branco.jpg".
 
 When play begins:
 	Display the Figure of InitialPicture ;
