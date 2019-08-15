@@ -4,6 +4,16 @@
     <dict>
         <key>Graphics</key>
         <dict>
+            <key>3</key>
+            <string>Figures\presunto.jpg</string>
+            <key>4</key>
+            <string>Figures\bolsa_feminina.jpg</string>
+            <key>5</key>
+            <string>Figures\carro.jpg</string>
+            <key>6</key>
+            <string>Figures\cozinha.jpg</string>
+            <key>7</key>
+            <string>Figures\garagem.jpg</string>
         </dict>
     </dict>
 </plist>
