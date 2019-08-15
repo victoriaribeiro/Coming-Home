@@ -7,13 +7,17 @@
             <key>3</key>
             <string>Figures\presunto.jpg</string>
             <key>4</key>
-            <string>Figures\bolsa_feminina.jpg</string>
+            <string>Figures\presunto_vivo.jpg</string>
             <key>5</key>
-            <string>Figures\carro.jpg</string>
+            <string>Figures\bolsa_feminina.jpg</string>
             <key>6</key>
-            <string>Figures\cozinha.jpg</string>
+            <string>Figures\carro.jpg</string>
             <key>7</key>
+            <string>Figures\cozinha.jpg</string>
+            <key>8</key>
             <string>Figures\garagem.jpg</string>
+            <key>9</key>
+            <string>Figures\homi_branco.jpg</string>
         </dict>
     </dict>
 </plist>
