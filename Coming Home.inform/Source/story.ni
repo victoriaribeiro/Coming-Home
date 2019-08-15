@@ -59,12 +59,18 @@ Living Room is a room."it's too Dark to examine".
 
 Golden Picture Portrait  is  in Small Bedroom. The description of Golden Picture Portrait is "[if we have examined the Light Switch] You can see you, Katherine and a third man with familiar features ... He ... is your Brother ... you remembered a violent fight  on the Last Week with him".
 
+Center Table is a container and  in Small Bedroom.
+
+Broken Picture Portraid  is in Center Table. The description of  Broken Picture Portraid  is "A Broken Picture Portraid with a photograph of the day  of you nomeation as COO of River Tech... You have a memory of  a dispute with your brother about this charge.".
+
+
 Light Switch is in Living Room.
 
 After examining the Light Switch:
 	if LivingRoomLightOn is false:
 		say "You turn it on. now you can see a room vintage ornated with  several shelds with Picture Portraits but one of then caught your eye. ";
 		now Golden Picture Portrait is in Living Room;
+		now Center Table is in Living Room;
 		now LivingRoomLightOn is true;
 		continue the action;
 	otherwise:
